@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<!--<input type="text"
+     onblur="javascript:if(this.value=='') this.value= this.defaultValue;"
+     onfocus="javascript:if(this.value==this.defaultValue) this.value='';"
+     id="txtSearch"
+     value="search"
+     name="txtSearch" />
+
+
+<fieldset id="question1">
+    <legend>What is your gender?</legend>
+    <label><input type="radio" name="q1" value="right"> Female</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Male</label>
+</fieldset>
+<fieldset id="question2">
+    <legend>What is your gender?</legend>
+    <label><input type="radio" name="q1" value="right"> African-American</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> White</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Asian</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Hispanic or Latino</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Native American</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Pacific Islander</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Other</label>
+</fieldset>
+<fieldset id="question3">
+    <legend>What is your sexual orientation?</legend>
+    <label><input type="radio" name="q1" value="right"> Gay</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Lesbian</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Bisexual</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Straight</label>
+</fieldset>
+<fieldset id="question4">
+    <legend>What religion are you affiliated with?</legend>
+    <label><input type="radio" name="q1" value="right"> No affiliation</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Adventist</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> African Methodist</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Agnostic</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Anglican</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Assembly of God</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Atheist</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Baha'i</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Baptist</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Buddhist</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Catholic</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Christian and Missionary Alliance</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Christian Science</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Church of Brethren</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Church of Christ</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Church of God</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Church of God in Christ</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Church of Scientology</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Church of Nazarene</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Churches of Christ</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Confucian</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Congregational</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Disciples of Christ</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Episcopal</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Evangelical Covenant Church</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Evangelical Free Church</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Greek Orthodox</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Hindu</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Islam</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Jehova's Witness</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Jewish</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> LDS</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Lutheran</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Mennonite</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Methodist</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Missionary Church</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Moravian</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Muslim/Islamic</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Non-Denominational Christian</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Pagan/Wiccan</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Pentecostal</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Presbyterian</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Protestant</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Quaker</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Reformed</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Russian Orthodox</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Sikh</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Taoist</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Unitarian Universalist</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Wesleyan</label>
+    <br/>
+</fieldset>
+
+<fieldset id="question5">
+    <legend>Do you have any disabilities? </legend>
+    <label><input type="radio" name="q1" value="right"> Alzheimer's</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Amputation</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Arthritis</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Attention Deficit Disorder (ADD)</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Autism</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Bipola</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Blindness & Visual Impairment</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Baha'i</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Baptist</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Buddhist</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Catholic</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Christian and Missionary Alliance</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Christian Science</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Church of Brethren</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Church of Christ</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Church of God</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Church of God in Christ</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Church of Scientology</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Church of Nazarene</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Churches of Christ</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Confucian</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Congregational</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Disciples of Christ</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Episcopal</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Evangelical Covenant Church</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Evangelical Free Church</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Greek Orthodox</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Hindu</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Islam</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Jehova's Witness</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Jewish</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> LDS</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Lutheran</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Mennonite</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Methodist</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Missionary Church</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Moravian</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Muslim/Islamic</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Non-Denominational Christian</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Pagan/Wiccan</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Pentecostal</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Presbyterian</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Protestant</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Quaker</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Reformed</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Russian Orthodox</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Sikh</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Taoist</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Unitarian Universalist</label>
+    <br/>
+    <label><input type="radio" name="q1" value="wrong"> Wesleyan</label>
+    <br/>
+</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="button" id="answer">
+    <label>Submit</label>
+<script type="text/javascript">
+    document.getElementById("answer").onclick = validate;
+    function validate() {
+        var radios;
+        var i;
+        var right;
+        radios = document.getElementById("question1").getElementsByTagName("input");
+
+        right = false;
+        for(i = 0; i < radios.length; i++) {
+            if(radios[i].value == "yes" && radios[i].checked == true) {
+                right = true;
+            }
+        }
+
+        if(right) {
+            alert("You answered correctly");
+        } else {
+            alert("Wrong answer");
+        }
+    }
+</script>-->
+
+<script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+<script>
+    (function ($) {
+        jQuery.expr[':'].Contains = function(a,i,m){
+            return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
+        };
+
+        function listFilter(header, list) {
+            var form = $("<form>").attr({"class":"filterform","action":"#"}),
+                    input = $("<input>").attr({"class":"filterinput","type":"text"});
+            $(form).append(input).appendTo(header);
+
+            $(input)
+                    .change( function () {
+                        var filter = $(this).val();
+                        if(filter) {
+                            $(list).find("a:not(:Contains(" + filter + "))").parent().slideUp();
+                            $(list).find("a:Contains(" + filter + ")").parent().slideDown();
+                        } else {
+                            $(list).find("li").slideDown();
+                        }
+                        return false;
+                    })
+                    .keyup( function () {
+                        $(this).change();
+                    });
+        }
+
+        $(function () {
+            listFilter($("#header"), $("#list"));
+        });
+    }(jQuery));
+</script>
+
+</head>
+<body>
+<div id="wrap">
+    <h1 id="header">Scholarships</h1>
+    <ul id="list">
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Track and Field</a></li>
+        <li><a href="#">African-American</a></li>
+        <li><a href="#">Orchestra</a></li>
+        <li><a href="#">Band</a></li>
+        <li><a href="#">Computer Science</a></li>
+        <li><a href="#">Engineering</a></li>
+        <li><a href="#">Medical</a></li>
+        <li><a href="#">English</a></li>
+        <li><a href="#">Communication</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Law</a></li>
+        <li><a href="#">Basketball</a></li>
+    </ul>
+</div>
+
+
+
+
+</body>
+</html>
