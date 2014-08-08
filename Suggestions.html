@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Scholarship Tracker</title>
+    <title>Scholarship Track</title>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+    <script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="Suggestions.css"/>
+    <style>
+        table,th,td
+        {
+            border:10px solid orange;
+            border-collapse:collapse;
+        }
+        th,td
+        {
+            padding:5px;
+        }
+        th
+        {
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+<input type="text" id="search" placeholder="Type to search">
+<table id="tablerows">
+</table>
+<!--<div id="tablerows">-->
+<!--</div>-->
+<script>
+    var postsRef = new Firebase
+    ("https://fakeapp.firebaseio.com/results/collection1");
+    //    postsRef.on('value', function (snapshot) {
+    var tableheader="<tr><th>Name</th><th>Award</th><th>Deadline</th></tr>";
+    $('#tablerows').append (tableheader);
+    console.log(tableheader);
+    postsRef.once('value', function(ts) {
+        ts.forEach(function(ts) {
+            var task = ts.val();
+            var Name = ts.val().Name.text;
+            var award = ts.val().Award;
+            var deadline = ts.val().Deadline;
+            var tabledata= "<tr><td>"+ Name +"</td><td>" + award +
+                    "</td><td>" + deadline + " </td></tr>";
+            $('#tablerows').append (tabledata);
+        });
+        var $rows = $('#tablerows tr');
+        $('#search').keyup(function() {
+            var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
+            $rows.show().filter(function() {
+                var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
+                return !~text.indexOf(val);
+            }).hide();
+        });
+    });
+</script>
+
+<div id="head" data-role="header">
+    <h4>Scholarship Track</h4>
+    </div>
+<div id="sub">Suggestions</div>
+<img id="spt" src="http://www.clker.com/cliparts/s/r/1/j/R/V/swirl.svg">
+<div id="eml">Email yourself your favorite links!</div>
+<a id="gml"href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuAMZPQ9aA93fbmiSSV5qhDeBbuZ6G8FkUMTbV8SKyrB1yypfb" width="50px" height="50px" /></a>
+<a id="yho" href="https://us-mg5.mail.yahoo.com/neo/launch?.rand=agf4b6hoa00d8#7681757513" target="_blank"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRK2CoqT6iPK84E67E0PRp_nmjhUVtPYh8hI_AdO6d1SUsNw_74Lw"width="50px" height="50px" /></a>
+<a id="olk"href="https://snt146.mail.live.com/?page=Compose" target="_blank"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8oWOUWKtR2k8V1PC_VMy9JPuW64ajt7FZBDjLJJ491NIWdO4QMA" width="50px" height="50px" /></a>
+</body>
+</html>
